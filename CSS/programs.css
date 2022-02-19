@@ -1,0 +1,52 @@
+.three-row-pricing-table-wrapper {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.pricing-table-wrapper {
+    margin: 15px;
+    width: 27%;
+}
+
+.pricing-table-wrapper .pricing-table-wrapper-cta .ghost-btn:hover {
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+}
+
+.dropdown-filter-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.dropdown-filter-wrapper p {
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 9px;
+}
+
+.dropdown-filter-wrapper select,
+.dropdown-filter-wrapper select:focus-visible {
+    margin-left: 20px;
+    border: 1px solid var(--primary);
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 600;
+    outline: none;
+}
+
+@media all and (max-width: 540px) {
+    .three-row-pricing-table-wrapper {
+        width: 90%;
+    }
+
+    .three-row-pricing-table-wrapper .pricing-table-wrapper {
+        width: 100%;
+        margin: 15px auto;
+    }
+}

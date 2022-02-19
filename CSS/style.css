@@ -1,0 +1,731 @@
+:root {
+    --white: #fff;
+    --black: #000;
+    --black-2: #222;
+    --black-3: #333;
+    --light-grey: #f5f5f5;
+    --primary: #DFB63F;
+    --transition: all .25s ease-in-out;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Poppins;
+    font-weight: 400;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 52px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 16px;
+}
+
+h3 {
+    font-weight: 800;
+    font-size: 26px;
+    margin-bottom: 16px;
+}
+
+h6 {
+    font-weight: 800;
+    font-size: 16px;
+}
+
+p {
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+a {
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+button,
+.freebie-form input.freebie-submit-btn,
+.primary-btn,
+.ghost-btn {
+    font-weight: 600;
+    text-decoration: none;
+    width: fit-content;
+    background-color: var(--primary);
+    color: var(--white);
+    border: 1px solid var(--primary);
+    border-radius: 9px;
+    padding: 10px 15px;
+    transition: var(--transition);
+}
+
+button:hover,
+.freebie-form input.freebie-submit-btn:hover,
+.primary-btn:hover,
+.ghost-btn:hover {
+    text-decoration: none;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: var(--transition);
+}
+
+.focus-btn {
+    width: 100%;
+    text-align: center;
+}
+
+ul {
+    margin: 0 0 16px 40px;
+    list-style: none;
+}
+
+.about-section ul li::before {
+    content: "\2022";
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    color: var(--primary);
+}
+
+.section {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.row {    
+    width: 100%;
+    max-width: 1600px;
+    display: flex;
+    flex-direction: row;
+    margin: 60px auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.platform-counter-row {
+    width: 100%;
+    max-width: 1600px;
+    display: flex;
+    flex-direction: row;
+    margin: 60px auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 30px;
+}
+
+.light-text {
+    color: var(--white);
+}
+
+.dark-text {
+    color: var(--black);
+}
+
+.grey-text {
+    color: var(--black-3);
+}
+
+.secondary-btn {
+    background-color: transparent;
+    color: var(--primary);
+    border: none;
+    padding: 0;
+}
+
+.white-btn {
+    font-size: 12px;
+    color: var(--white);
+    background-color: transparent;
+    border: 1px solid var(--white);
+}
+
+.ghost-btn {
+    color: var(--black);
+    background-color: transparent;
+    border: 1px solid var(--black);
+    width: 100%;
+    text-align: center;
+}
+
+.mt-0 {
+    margin-top: 0;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.mt-60 {
+    margin-top: 60px;
+}
+
+.mb-0 {
+    margin-bottom: 0px;
+}
+
+.mb-60 {
+    margin-bottom: 60px;
+}
+
+/* NAV BAR */
+.topnav {
+    width: 100%;
+    position: fixed;
+    background-color: var(--black);
+}
+
+.topnav .header-col a:hover {
+    cursor: pointer;
+}
+
+.topnav-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.topnav-content a {
+    margin: 0 20px;
+    color: var(--white);
+}
+
+.topnav-content a:hover {
+    text-decoration: underline;
+}
+
+.topnav .header-col {
+    text-align: center;
+}
+
+.topnav .header-col:nth-child(1) {
+    width: 15%;
+}
+
+.topnav .header-col:nth-child(2) {
+    width: 50%;
+    text-align: left;
+}
+
+.topnav .header-col:nth-child(3) {
+    width: 30%;
+}
+
+.topnav-content a.icon {
+    display: none; /* Hide on default */
+}
+
+.language-dropdown {
+    margin-left: 20px;
+    background-color: transparent;
+    color: var(--white);
+    border: none;
+    border-radius: 9px;
+    padding: 4px 10px;
+}
+
+.language-dropdown:focus-visible,
+.language-dropdown:focus-within,
+.language-dropdown:focus,
+.language-dropdown:active {
+    border: none;
+}
+
+.language-dropdown option {
+    color: var(--black);
+}
+
+/* FOOTER */
+.footer-wrapper {
+    width: 100%;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.footer-content {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 40px 0;
+    margin: 0 auto;
+}
+
+.footer-content h6 {
+    margin-bottom: 10px;
+}
+
+.footer-content a {
+    font-weight: 400;
+    color: var(--white);
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+.footer-content ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none!important;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-content .social-logos {
+    flex-direction: row;
+}
+
+.footer-content .social-logos li {
+    margin: 0 10px
+}
+
+.footer-content .social-logos li:first-child {
+    margin-left: 0;
+}
+
+.footer-content .social-logos li:last-child {
+    margin-right: 0;
+}
+
+.footer-content .social-logos i {
+    color: var(--white);
+    transition: var(--transition);
+}
+
+.footer-content .social-logos i:hover {
+    transition: var(--transition);
+    transform: scale(1.2);
+}
+
+.footer-content ul li {
+    list-style-type: none;
+    list-style: none;
+}
+
+.hero-section {
+    height: 80vh;
+    background: url("../IMG/JakeHeader.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.three-row-pricing-table-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 40px auto;
+}
+
+.pricing-table-wrapper {
+    background-color: var(--white);
+    border: 1px solid var(--black-2);
+    padding: 20px;
+    border-radius: 12px;
+    margin: 0px 15px;
+    width: 33%;
+}
+
+.focus-pricing-table {
+    border-top: 5px solid var(--primary);
+    border-right: 1px solid var(--primary);
+    border-bottom: 1px solid var(--primary);
+    border-left: 1px solid var(--primary);
+}
+
+.pricing-table-wrapper-text h4 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.pricing-table-wrapper-text p:not(.program-price) {
+    margin-top: 36px;
+}
+
+.program-price {
+    font-size: 26px;
+    margin-top: 20px;
+    font-weight: 700;
+    text-align: left;
+    color: var(--black-3);
+}
+
+.pricing-table-usp h5 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.pricing-table-usp li {
+    font-size: 14px;
+}
+
+.pricing-table-wrapper-cta {
+    width: 100%;
+    display: flex;
+    margin: 36px 0;
+}
+
+.pricing-table-usp li::before {
+    content: "\2022";
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    color: var(--primary);
+}
+
+.row-section-pricing {
+    width: 80%;
+    display: flex!important;
+    justify-content: center;
+    padding: 60px 30px;
+    margin: 0px auto 0px auto!important
+}
+
+.purple-popular-tag-pricing {
+    display: flex;
+    font-size: 8px;
+    text-transform: uppercase;
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 0 12px;
+    border-radius: 6px;
+    margin-left: 7px;
+    align-items: center;
+}
+
+.business-pricing {
+    display: flex;
+    font-weight: 700;
+}
+
+.review-section {
+    margin-top: 100px;
+}
+
+.reviews-wrapper {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.29);
+    border-radius: 9px;
+    transition: var(--transition);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.reviews-wrapper:hover {
+    transform: scale(1.05);
+    transition: var(--transition);
+}
+
+.reviews-wrapper img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: -100px auto 15px auto;
+}
+
+.reviews-wrapper h3,
+.reviews-wrapper p {
+    text-align: center;
+}
+
+.about-section .platform-counter {
+    margin: 10px auto;
+}
+
+.about-section .platform-counter .col:first-child {
+    margin-left: 0;
+}
+
+.about-section .platform-counter .col .description {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.about-section .platform-counter .col .counter {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.gallery-section {
+    flex-direction: column;
+}
+
+.gallery-section .row {
+    margin: 0;
+    max-width: none;
+}
+
+.gallery-section .row img {
+    width: 50%;
+}
+
+.cta-section {
+    background: url("../IMG/JakeLifting.jpg");
+    background-position: center left;
+    background-repeat: no-repeat;
+    height: 70vh;
+}
+
+.freebie-form {
+    width: 100%;
+}
+
+.freebie-form input:not(.freebie-submit-btn) {
+    width: 60%;
+}
+
+.freebie-form input {
+    margin: 5px auto;
+    padding: 10px;
+    border-radius: 9px;
+    border: 1px solid var(--primary);
+}
+
+.topnav-content-sm {
+    display: none;
+}
+
+.small-menu-wrapper {
+    display: none;
+}
+
+@media all and (max-width: 540px) {
+    .topnav-content {
+        display: none;
+    }
+
+    .topnav-content-sm {
+        display: flex;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .topnav .topnav-content-sm .header-col {
+        width: 50%;
+    }
+
+    .topnav .topnav-content-sm .header-col:first-child {
+        text-align: left;
+    }
+    
+    .topnav .topnav-content-sm .header-col:last-child {
+        text-align: right;
+    }
+
+    .topnav .topnav-content-sm .header-col .icon {
+        font-size: 30px;
+        color: var(--white);
+    }
+
+    .small-menu-wrapper {
+        display: none;
+        width: 100%;
+        background-color: var(--white);
+        color: var(--black);
+    }
+
+    .small-menu-wrapper.open {
+        display: block;
+    }
+
+    .small-menu-content {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .small-menu-content a {
+        margin: 10px 0;
+    }
+
+    .language-dropdown {
+        color: var(--black);
+        margin-left: 0;
+        padding-left: 0;
+        width: fit-content;
+        font-weight: 700;
+    }
+
+    .language-switch-sm {
+        font-weight: 400;
+    }
+
+    .hero-section {
+        background-position: 55% 50%;
+        background-repeat: no-repeat;
+    }
+
+    .three-row-pricing-table-wrapper {
+        flex-direction: column;
+        max-width: 90%;
+    }
+
+    .pricing-table-wrapper {
+        width: 100%;
+    }
+
+    .pricing-table-wrapper {
+        margin: 0 auto;
+    }
+
+    .pricing-table-wrapper:nth-child(2) {
+        margin: 20px auto;
+    }
+
+    .footer-wrapper .footer-content .col {
+        padding: 0 20px;
+        height: 120px;
+    }
+
+    .footer-wrapper .footer-content .col h6 {
+        font-size: 14px;
+    }
+
+    .footer-wrapper .footer-content .col li a {
+        font-size: 10px;
+    }
+
+    .footer-wrapper .footer-content .col li:not(.social-logos > *) {
+        margin: 5px 0;
+        line-height: 1;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .row {
+        width: 100%;
+        max-width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .col {
+        width: 100%;
+        margin: auto;
+        padding: 0 30px;
+    }
+
+    .classes-wrapper {
+        width: 100%;
+    }
+
+    .classes-section .col {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .cta-section {
+        height: auto;
+    }
+
+    .review-section {
+        margin-top: -50px;
+    }
+
+    .reviews-wrapper {
+        height: 100%;
+    }
+
+    .review-section img {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        margin: -50px auto 0 auto;
+    }
+
+    .reviews-wrapper:last-of-type {
+        margin-top: 80px;
+    }
+
+    .section.gallery-section .row img {
+        width: 100%;
+    }
+
+    .jake-img {
+        margin-top: 30px;
+    }
+}
+
+@media all and (max-width: 868px) {
+    .reviews-wrapper {
+        padding: 0 20px;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
+    .three-row-pricing-table-wrapper {
+        width: 100%;
+    }
+
+    .pricing-table-wrapper-text h4 {
+        font-size: 18px;
+    }
+
+    .pricing-table-usp h5 {
+        font-size: 14px;
+    }
+
+    .three-row-pricing-table-wrapper .purple-popular-tag-pricing {
+        display: none;
+    }
+
+    .about-section .platform-counter {
+        display: none;
+    }
+
+    .topnav .topnav-content .white-btn.contact-btn {
+        display: none;
+    }
+}
+
+@media all and (min-width: 1600px) {
+
+}
