@@ -358,7 +358,8 @@ ul {
 }
 
 .pricing-table-wrapper:hover {
-    background-color: var(--black-3);
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
     color: var(--white);
     transition: var(--transition);
 }
@@ -368,6 +369,11 @@ ul {
 }
 
 .pricing-table-wrapper:hover .ghost-btn {
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+.pricing-table-wrapper:hover .ghost-btn:hover {
     border: 1px solid var(--white);
     color: var(--white);
 }
