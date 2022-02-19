@@ -9,12 +9,6 @@
     width: 27%;
 }
 
-.pricing-table-wrapper .pricing-table-wrapper-cta .ghost-btn:hover {
-    background-color: var(--primary);
-    color: var(--white);
-    border: none;
-}
-
 .dropdown-filter-wrapper {
     display: flex;
     justify-content: center;
