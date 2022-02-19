@@ -354,6 +354,22 @@ ul {
     border-radius: 12px;
     margin: 0px 15px;
     width: 33%;
+    transition: var(--transition);
+}
+
+.pricing-table-wrapper:hover {
+    background-color: var(--black-3);
+    color: var(--white);
+    transition: var(--transition);
+}
+
+.pricing-table-wrapper:hover .program-price {
+    color: var(--white);
+}
+
+.pricing-table-wrapper:hover .ghost-btn {
+    border: 1px solid var(--white);
+    color: var(--white);
 }
 
 .focus-pricing-table {
