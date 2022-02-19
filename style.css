@@ -373,7 +373,7 @@ ul {
     color: var(--white);
 }
 
-.pricing-table-wrapper:hover .ghost-btn:hover {
+.all-programs .pricing-table-wrapper .ghost-btn:hover {
     border: 1px solid var(--white);
     color: var(--white);
 }
