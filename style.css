@@ -335,7 +335,7 @@ ul {
 
 .hero-section {
     height: 80vh;
-    background: url("../IMG/JakeHeader.jpg");
+    background: url("JakeHeader.jpg");
     background-position: center center;
     background-repeat: no-repeat;
 }
@@ -493,7 +493,7 @@ ul {
 }
 
 .cta-section {
-    background: url("../IMG/JakeLifting.jpg");
+    background: url("JakeLifting.jpg");
     background-position: center left;
     background-repeat: no-repeat;
     height: 70vh;
