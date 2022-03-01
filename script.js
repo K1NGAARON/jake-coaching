@@ -38,35 +38,6 @@ function openSmallMenu() {
     smallMenuWrapper.classList.toggle("open");
 }
 
-// Switch website to other language on click | On large screens
-let languageDropdown = document.querySelector(".language-dropdown");
-
-languageDropdown.addEventListener("change", function changeLanguage() {
-    let languageValue = languageDropdown.value;
-
-    if (languageValue === "english") {
-        // redirect to EN
-        console.log(languageValue);
-    } else {
-        // redirect to NL
-        console.log(languageValue);
-    }
-})
-
-// Switch website to other language on click || On small screens
-let languageSwitchSM = document.querySelector(".language-switch-sm");
-let currentLanguageSM = (languageSwitchSM.innerHTML).toLowerCase();
-
-languageSwitchSM.addEventListener("click", function() {
-    if (currentLanguageSM === "change to dutch") {
-        // redirect to EN
-        console.log(currentLanguageSM);
-    } else {
-        // redirect to NL
-        console.log(currentLanguageSM);
-    }
-})
-
 
 // Animate numbers
 function animate(obj, initVal, lastVal, duration) {
