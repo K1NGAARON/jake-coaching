@@ -64,6 +64,7 @@ a {
 
 a:hover {
     text-decoration: none;
+    cursor: pointer;
 }
 
 button,
@@ -567,6 +568,10 @@ ul {
 }
 
 .small-menu-wrapper {
+    display: none;
+}
+
+.hidden {
     display: none;
 }
 
