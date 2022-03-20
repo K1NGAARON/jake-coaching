@@ -60,6 +60,7 @@ a {
     font-weight: 600;
     font-size: 14px;
     text-decoration: none;
+    color: var(--primary);
 }
 
 a:hover {
@@ -574,6 +575,12 @@ ul {
 .hidden {
     display: none;
 }
+
+/* COOKIE PAGE */
+.section.cookie-section .row .col ol li {
+    font-weight: 700;
+}
+
 
 @media all and (max-width: 540px) {
     .topnav-content {
