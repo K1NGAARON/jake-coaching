@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jake Plaskie Coaching</title>
+    <title>Programs</title>
 
-    <link rel="styleSheet" href="style.css" type="text/css" />
-    <link rel="styleSheet" href="cookie-banner.css" type="text/css" />
+    <link rel="styleSheet" href="/CSS/style.css" type="text/css" />
+    <link rel="styleSheet" href="/CSS/programs.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
@@ -21,21 +21,17 @@
     <!-- End Google Tag Manager -->
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MPQK6F8"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 
 <header>
     <div class="topnav" id="myTopnav">
         <div class="topnav-content">
             <div class="header-col">
                 <a onclick="scrollToHome()">
-                    <img src="Placeholder loho.png" alt="Jake Plaskie Coaching Logo">
+                    <img src="/IMG/Placeholder loho.png" alt="Jake Plaskie Coaching Logo">
                 </a>
             </div>
             <div class="header-col">
-                <a onclick="scrollToHome()">Home</a>
+                <a href="index.html">Home</a>
                 <a href="programs.html">Programs</a>
                 <a onclick="scrollToAbout()">About</a>
                 <a onclick="scrollToReviews()">Reviews</a>
@@ -45,15 +41,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <button onclick="scrollToForm()" class="white-btn contact-btn">
                     Contact me
                 </button>
-                <a class="language-toggle" href="index.html">
-                    <img class="language-toggle-img" src="flag_en.png" alt="Change to Dutch">
+                <a class="language-toggle" href="[NL] index.html">
+                    <img class="language-toggle-img" src="/IMG/flag_be.png" alt="Change to Dutch">
                 </a>
             </div>
         </div>
         <div class="topnav-content-sm open">
             <div class="header-col">
                 <a onclick="scrollToHome()">
-                    <img src="Placeholder loho.png" alt="Jake Plaskie Coaching Logo">
+                    <img src="/IMG/Placeholder loho.png" alt="Jake Plaskie Coaching Logo">
                 </a>
             </div>
             <div class="header-col">
@@ -80,7 +76,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="row">
         <div class="col">
             <h1>
-                Nou nou nou
+                Together we will achieve your physical goals.
             </h1>   
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur inventore accusamus perferendis repudiandae commodi ducimus eum odit nihil obcaecati, delectus earum nobis dolorem error. Laboriosam.
@@ -96,15 +92,36 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 
 <!-- OUR CLASSES -->
-<div class="section classes-section" id="programs">
+<div class="section classes-section all-programs" id="programs">
     <div class="row mb-0 mt-60">
         <h2>
             My programs
         </h2>
     </div>
+
+    <div class="dropdown-filter-wrapper">
+        <p>
+            Explore my programs
+        </p>
+        <select name="programs-categories" id="programs-categories">
+           <option value="all">
+               All
+           </option> 
+           <option value="workout-splits">
+               Workout Splits
+           </option> 
+           <option value="meal-plans">
+               Meal Plans
+           </option> 
+           <option value="1-1-coaching">
+               1 on 1 Coaching
+           </option> 
+        </select>
+    </div>
+    
     <div class="three-row-pricing-table-wrapper">
-        <div class="pricing-table-wrapper">
-            <div class="pricing-table-wrapper-text">
+        <div class="pricing-table-wrapper workout-split">
+            <div class="pricing-table-wrapper-text workout-split">
                 <h4>
                     Push Pull Leg Split
                 </h4>
@@ -119,7 +136,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
             <div class="pricing-table-usp">
                 <h5>
-                    What you get:
+                    What you get in the PPL Split:
                 </h5>
                 <ul>
                     <li>A effective split based on your training experience</li>
@@ -129,28 +146,153 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </div>
 
-        <div class="pricing-table-wrapper focus-pricing-table">
+        <div class="pricing-table-wrapper workout-split">
             <div class="pricing-table-wrapper-text">
                 <h4>
-                    <span class="business-pricing">
-                        3 months Coaching
-                        <span class="purple-popular-tag-pricing">
-                            Popular
-                        </span>
-                    </span>
+                    Upper lower split
+                </h4>
+                <p class="program-price">
+                    €25,-
+                </p>
+            </div>
+            <div class="pricing-table-wrapper-cta">
+                <a class="ghost-btn" href="/en/request-demo/">
+                    Get Started
+                </a>            
+            </div>
+            <div class="pricing-table-usp">
+                <h5>
+                    What you get in the upper lower Split:
+                </h5>
+                <ul>
+                    <li>A effective split based on your training experience</li>
+                    <li>What you get 2</li>
+                    <li>What you get 3</li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="pricing-table-wrapper workout-split">
+            <div class="pricing-table-wrapper-text">
+                <h4>
+                    Full body Split
+                </h4>
+                <p class="program-price">
+                    €25,-
+                </p>
+            </div>
+            <div class="pricing-table-wrapper-cta">
+                <a class="ghost-btn" href="/en/request-demo/">
+                    Get Started
+                </a>            
+            </div>
+            <div class="pricing-table-usp">
+                <h5>
+                    What you get in the full body Split:
+                </h5>
+                <ul>
+                    <li>A effective split based on your training experience</li>
+                    <li>What you get 2</li>
+                    <li>What you get 3</li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="pricing-table-wrapper full-coaching">
+            <div class="pricing-table-wrapper-text">
+                <h4>
+                    3 months 1 on 1 coaching
                 </h4>
                 <p class="program-price">
                     €275,-
                 </p>
             </div>
             <div class="pricing-table-wrapper-cta">
-                <a class="primary-btn focus-btn" href="/en/request-demo/">
-                    Get Started ➔
-                </a>  
+                <a class="ghost-btn" href="/en/request-demo/">
+                    Get Started
+                </a>            
             </div>
             <div class="pricing-table-usp">
                 <h5>
-                    What you get:
+                    What you get in this personalized plan:
+                </h5>
+                <ul>
+                    <li>A effective split based on your training experience</li>
+                    <li>What you get 2</li>
+                    <li>What you get 3</li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="pricing-table-wrapper full-coaching">
+            <div class="pricing-table-wrapper-text">
+                <h4>
+                    6 months 1 on 1 coaching
+                </h4>
+                <p class="program-price">
+                    €545,-
+                </p>
+            </div>
+            <div class="pricing-table-wrapper-cta">
+                <a class="ghost-btn" href="/en/request-demo/">
+                    Get Started
+                </a>            
+            </div>
+            <div class="pricing-table-usp">
+                <h5>
+                    What you get in this personalized plan:
+                </h5>
+                <ul>
+                    <li>A effective split based on your training experience</li>
+                    <li>What you get 2</li>
+                    <li>What you get 3</li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="pricing-table-wrapper full-coaching">
+            <div class="pricing-table-wrapper-text">
+                <h4>
+                    12 months 1 on 1 coaching
+                </h4>
+                <p class="program-price">
+                    €1.085,-
+                </p>
+            </div>
+            <div class="pricing-table-wrapper-cta">
+                <a class="ghost-btn" href="/en/request-demo/">
+                    Get Started
+                </a>            
+            </div>
+            <div class="pricing-table-usp">
+                <h5>
+                    What you get in this personalized plan:
+                </h5>
+                <ul>
+                    <li>A effective split based on your training experience</li>
+                    <li>What you get 2</li>
+                    <li>What you get 3</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="pricing-table-wrapper meal-plan">
+            <div class="pricing-table-wrapper-text">
+                <h4>
+                    1 month meal plan
+                </h4>
+                <p class="program-price">
+                    €75,-
+                </p>
+            </div>
+            <div class="pricing-table-wrapper-cta">
+                <a class="ghost-btn" href="/en/request-demo/">
+                    Get Started
+                </a>            
+            </div>
+            <div class="pricing-table-usp">
+                <h5>
+                    What you get during this period
                 </h5>
                 <ul>
                     <li>What you get 1</li>
@@ -160,10 +302,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </div>
 
-        <div class="pricing-table-wrapper">
+        <div class="pricing-table-wrapper meal-plan">
             <div class="pricing-table-wrapper-text">
                 <h4>
-                    3 months food & PT
+                    3 month meal plan
                 </h4>
                 <p class="program-price">
                     €220,-
@@ -176,7 +318,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
             <div class="pricing-table-usp">
                 <h5>
-                    What you get:
+                    What you get during this period
+                </h5>
+                <ul>
+                    <li>What you get 1</li>
+                    <li>What you get 2</li>
+                    <li>What you get 3</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="pricing-table-wrapper meal-plan">
+            <div class="pricing-table-wrapper-text">
+                <h4>
+                    6 month meal plan
+                </h4>
+                <p class="program-price">
+                    €435,-
+                </p>
+            </div>
+            <div class="pricing-table-wrapper-cta">
+                <a class="ghost-btn" href="/en/request-demo/">
+                    Get Started
+                </a>            
+            </div>
+            <div class="pricing-table-usp">
+                <h5>
+                    What you get during this period
                 </h5>
                 <ul>
                     <li>What you get 1</li>
@@ -186,127 +354,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </div>
     </div>
-    <div class="row mb-60 mt-0">
-        <a class="primary-btn" href="programs.html">
-            Discover all programs
-        </a>
-    </div>
-</div>
-
-<!-- FREE DOWNLOAD SECTION -->
-<div class="section cta-section light-text" id="download">
-    <div class="row">
-        <div class="col">
-            <h3>
-                Download my free Macro calculator
-            </h3>
-            <p>
-                Counting macros is hard, I get it. Nevertheless it's really important when you're trying to get lean or even while bulking! Having an excessive amount of calories will result in increased fat levels.
-                <br><br>
-                <span style="font-weight: 700;">Download my Free Macro Calculator today to make your life easier.</span>
-            </p>
-        </div>
-        <div class="col">
-            <form class="freebie-form" action="https://teamsunday.us14.list-manage.com/subscribe/post?u=f8446ec1d39b7f0e049b08f6e&amp;id=d94a77c7d7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                <input type="text" id="FNAME" placeholder="Fill in your first name" required><br>
-                <input type="email" id="EMAIL" placeholder="Fill in your email" required><br>
-                <input type="submit" value="Submit ➔" class="freebie-submit-btn">
-                <div id="mce-responses" class="clear foot">
-                    <div class="response" id="mce-error-response" style="display:none"></div>
-                    <div class="response" id="mce-success-response" style="display:none"></div>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
-
-<!-- REVIEWS SECTION -->
-<div class="section review-section" id="reviews">
-    <div class="row">
-        <div class="col">
-            <div class="reviews-wrapper">
-                <!-- <img src="harishan-kobalasingam-8PMvB4VyVXA-unsplash.jpg"> -->
-                <h3>
-                    Joël
-                </h3>
-                <p>
-                    "Een heel sympathieke, gemotiveerde en vooral een capabele personal trainer. Die 100% voor je klaar staat en er alles aan doet om je doelen te bereiken!
-                    Toen ik voor de eerste keer contact opnam met Jake. Zijn we er heel snel aan begonnen. Ben zeer goed opgevolgd geweest en kon altijd terecht met vragen of problemen. Dieet schema’s zijn heel flexibel en uitgebreid. Het is zeker een aanrader om met Jake aan de slag te gaan. Want als alles goed opgevolgd wordt kun je zeker je doelen behalen!"                  
-                </p>
-            </div>
-        </div>
-        <div class="col">
-            <div class="reviews-wrapper">
-                <!-- <img src="vicky-hladynets-_RcTaCHHMI0-unsplash.jpg"> -->
-                <h3>
-                    Review name
-                </h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error temporibus accusantium fuga, necessitatibus atque dolor ducimus dolores sed modi nisi.
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- ABOUT SECTION -->
-<div class="section about-section" id="about-jake">
-    <div class="row">
-        <div class="col">
-            <h2>
-                Get to know Jake
-            </h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam provident, dolorem neque nihil consequuntur temporibus praesentium sed officiis quasi consectetur?
-            </p>
-                <div class="platform-counter platform-counter-row">
-                    <div class="col">
-                        <p class="counter" id="0101">
-                            0
-                        </p>
-                        <p class="description">
-                            Years experience
-                        </p>
-                    </div>
-                    <div class="col">
-                        <p class="counter" id="0102">
-                            0
-                        </p>
-                        <p class="description">
-                            Students helped
-                        </p>
-                    </div>
-                    <div class="col">
-                        <p class="counter">
-                            <span id='0103' style="font-weight: 700;">
-                                0
-                            </span>
-                            %
-                        </p>
-                        <p class="description">
-                            Success rate
-                        </p>
-                    </div>
-                </div>
-            <button onclick="scrollToForm()" class="primary-btn">
-                Get in touch ➔
-            </button>
-        </div>
-        <div class="col">
-            <img class="jake-img" src="AboutJake.jpg">
-        </div>
-    </div>
 </div>
 
 <!-- GALLERY SECTION -->
 <div class="section gallery-section">
     <div class="row">
-        <img src="JakeBenchPress.jpg">
-        <img src="JakeUnrack.jpg">
+        <img src="/IMG/JakeBenchPress.jpg">
+        <img src="/IMG/JakeUnrack.jpg">
     </div>
     <div class="row">
-        <img src="JakePullUp.jpg">
-        <img src="JakeBicepCurl.jpg">
+        <img src="/IMG/JakePullUp.jpg">
+        <img src="/IMG/JakeBicepCurl.jpg">
     </div>
 </div>
 
@@ -366,12 +424,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </h6>
                 <ul>
                     <li>
-                        <a onclick="scrollToAbout()">
+                        <a href="index.html#about-jake">
                             About me
                         </a>
                     </li>
                     <li>
-                        <a onclick="scrollToDownload()">
+                        <a href="index.html#download">
                             Free download
                         </a>
                     </li>
@@ -388,7 +446,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     Follow me
                 </h6>
                 <ul class="social-logos">
-                    <li class="hidden">
+                    <li class="hdden">
                         <a href="facebook.com">
                             <i class="fa fa-facebook"></i>
                         </a>
@@ -409,29 +467,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 </footer>
 
-
-<div class="cookie-banner-wrapper">
-    <div class="cookie-banner-content">
-        <h4>
-            Privacy and cookie policy
-        </h4>
-        <p>
-            By using this website you agree to our terms and conditions regarding <a href="cookies.html">cookies</a>.
-        </p>
-        <a id="more-info" href="cookies.html">
-            More info
-        </a>
-        <a id="accept-cookies">
-            I agree
-        </a>
-    </div>
-</div>
-
-<div id="overlay"></div>
-
-
-
-<script src="script.js"></script>
-<script src="cookie-banner.js"></script>
+<script src="/JS/script.js"></script>
+<script src="/JS/programs.js"></script>
 </body>
 </html>
