@@ -182,8 +182,9 @@ ul {
     text-align: center;
 }
 
-.language-toggle {
-    font-size: 12px;
+.language-toggle-img {
+    width: 30px;
+    height: auto;
 }
 
 .mt-0 {
@@ -210,7 +211,7 @@ ul {
 .topnav {
     width: 100%;
     position: fixed;
-    background-color: var(--black);
+    background-color: var(--black-2);
     z-index: 99;
 }
 
@@ -238,6 +239,8 @@ ul {
 
 .topnav .header-col {
     text-align: center;
+    display: flex;
+    align-items: center;
 }
 
 .topnav .header-col:nth-child(1) {
@@ -280,7 +283,7 @@ ul {
 /* FOOTER */
 .footer-wrapper {
     width: 100%;
-    background-color: var(--black);
+    background-color: var(--black-2);
     color: var(--white);
 }
 
@@ -348,7 +351,7 @@ ul {
 
 .hero-section {
     height: 80vh;
-    background: url("JakeHeader.jpg");
+    background: url("/IMG/JakeHeader.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     position: relative;
@@ -492,6 +495,7 @@ ul {
     transition: var(--transition);
     max-width: 500px;
     margin: 0 auto;
+    padding: 30px;
 }
 
 .reviews-wrapper:hover {
@@ -499,12 +503,12 @@ ul {
     transition: var(--transition);
 }
 
-.reviews-wrapper img {
+/* .reviews-wrapper img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     margin: -100px auto 15px auto;
-}
+} */
 
 .reviews-wrapper h3,
 .reviews-wrapper p {
