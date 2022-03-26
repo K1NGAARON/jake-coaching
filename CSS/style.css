@@ -491,6 +491,7 @@ ul {
     display: flex;
     flex-direction: column;
     box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.29);
+    border-top: 6px solid var(--primary);
     border-radius: 9px;
     transition: var(--transition);
     max-width: 500px;
