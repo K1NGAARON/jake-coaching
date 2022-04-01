@@ -260,6 +260,11 @@ ul {
     display: none; /* Hide on default */
 }
 
+#header-logo {
+    width: 50px;
+    height: auto;
+}
+
 .language-dropdown {
     margin-left: 20px;
     background-color: transparent;
