@@ -615,6 +615,7 @@ ul {
     
     .topnav .topnav-content-sm .header-col:last-child {
         text-align: right;
+        justify-content: flex-end;
     }
 
     .topnav .topnav-content-sm .header-col .icon {
@@ -676,6 +677,10 @@ ul {
 
     .pricing-table-wrapper:nth-child(2) {
         margin: 20px auto;
+    }
+
+    .footer-wrapper .footer-content {
+        flex-direction: column;
     }
 
     .footer-wrapper .footer-content .col {
