@@ -76,7 +76,7 @@ window.requestAnimationFrame(step);
 
 let text1 = document.getElementById('0101');
 let text2 = document.getElementById('0102');
-let text3 = document.getElementById('0103');
+// let text3 = document.getElementById('0103');
 
 function load() {
     animate(text1, 0, 11, 5000);
