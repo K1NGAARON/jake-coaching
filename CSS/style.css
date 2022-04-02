@@ -362,6 +362,14 @@ ul {
     position: relative;
 }
 
+.hero-section.program-hero {
+    height: 80vh;
+    background: url("../IMG/JakeLifting.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
 .three-row-pricing-table-wrapper {
     display: flex;
     justify-content: center;
