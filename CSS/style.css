@@ -593,7 +593,6 @@ ul {
     font-weight: 700;
 }
 
-
 @media all and (max-width: 540px) {
     .topnav-content {
         display: none;
@@ -802,8 +801,4 @@ ul {
     .topnav .topnav-content .white-btn.contact-btn {
         display: none;
     }
-}
-
-@media all and (min-width: 1600px) {
-
 }
