@@ -76,12 +76,22 @@ window.requestAnimationFrame(step);
 
 let text1 = document.getElementById('0101');
 let text2 = document.getElementById('0102');
-// let text3 = document.getElementById('0103');
 
 function load() {
-    animate(text1, 0, 11, 5000);
-    animate(text2, 0, 42, 5000);
-    animate(text3, 0, 96, 5000);
+    animate(text1, 0, 11, 3000);
+    animate(text2, 0, 42, 3000);
 }
 
-window.addEventListener('DOMContentLoaded', load())
+// this function runs every time you are scrolling
+$(window).scroll(function() {
+    var top_of_element = $("#about-jake").offset().top;
+    var bottom_of_element = $("#about-jake").offset().top + $("#about-jake").outerHeight();
+    var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+    var top_of_screen = $(window).scrollTop();
+
+    if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
+        load()
+    } else {
+        // the element is not visible, do something else
+    }
+});
