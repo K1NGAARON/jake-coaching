@@ -83,15 +83,21 @@ function load() {
 }
 
 // this function runs every time you are scrolling
+$.first_time = true;
 $(window).scroll(function() {
-    var top_of_element = $("#about-jake").offset().top;
-    var bottom_of_element = $("#about-jake").offset().top + $("#about-jake").outerHeight();
-    var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
-    var top_of_screen = $(window).scrollTop();
-
-    if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
-        load()
+    if($.first_time == true) {
+        var top_of_element = $("#about-jake").offset().top;
+        var bottom_of_element = $("#about-jake").offset().top + $("#about-jake").outerHeight();
+        var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+        var top_of_screen = $(window).scrollTop();
+    
+        if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
+            load()
+            $.first_time = false;
+        } else {
+            // the element is not visible, do something else
+        }
     } else {
-        // the element is not visible, do something else
+
     }
 });
