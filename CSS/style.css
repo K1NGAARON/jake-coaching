@@ -517,13 +517,6 @@ ul {
     transition: var(--transition);
 }
 
-/* .reviews-wrapper img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin: -100px auto 15px auto;
-} */
-
 .reviews-wrapper h3,
 .reviews-wrapper p {
     text-align: center;
@@ -558,6 +551,7 @@ ul {
 
 .gallery-section .row img {
     width: 50%;
+    height: auto;
 }
 
 .cta-section {
@@ -768,6 +762,7 @@ ul {
 
     .section.gallery-section .row img {
         width: 100%;
+        height: auto;
     }
 
     .jake-img {
