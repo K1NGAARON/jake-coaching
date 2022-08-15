@@ -131,6 +131,10 @@ ul {
     justify-content: center;
 }
 
+.row.flex-col {
+    flex-direction: column;
+}
+
 .platform-counter-row {
     width: 100%;
     max-width: 1600px;

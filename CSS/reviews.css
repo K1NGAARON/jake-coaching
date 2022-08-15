@@ -1,0 +1,42 @@
+.reviews .row {
+    margin: 60px auto;
+}
+
+.reviews:nth-child(odd) .row {
+    flex-direction: row-reverse;
+}
+
+.reviews:nth-child(odd) {
+    background-color: var(--light-grey);
+}
+
+.reviews .row h5 {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.reviews .row p {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.reviews .row img {
+    border-radius: 12px;
+    max-width: 600px;
+    width: auto;
+    margin: 0 auto;
+}
+
+.section.cta {
+    background-color: var(--light-grey);
+}
+
+@media all and (max-width: 540px) {
+    .reviews .row {
+        flex-direction: column;
+    }
+}
+
