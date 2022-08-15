@@ -38,5 +38,9 @@
     .reviews .row {
         flex-direction: column;
     }
+
+    .reviews .row img {
+        max-width: 100%;
+    }
 }
 
