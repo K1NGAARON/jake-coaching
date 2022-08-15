@@ -358,6 +358,21 @@ ul {
     list-style: none;
 }
 
+#bm {    
+    background-color: var(--secondary);    
+    border-top: 1px solid #fafafa40;    
+    padding-top: 20px;
+}
+#bm .row {    
+    margin: 0;    
+    color: var(--white);    
+    font-size: 14px;
+}
+#bm .row a {    
+    color: var(--white);    
+    font-size: 14px;
+}
+
 .hero-section {
     height: 80vh;
     background: url("../IMG/JakeHeader.jpg");
